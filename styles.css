@@ -1,0 +1,256 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor {
+    width:90%;
+    margin:0 auto;
+}
+
+header{
+    background-color: darkorange;
+    padding: 20px;
+}
+
+h3{
+    text-align: center;
+}
+nav{
+    display:flex;
+}
+
+header .contenedor{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.7s;
+}
+
+header nav a:hover{
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.central {
+    background:url(recursos/mila-con-fritas.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size:cover;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+h1{
+    color: #62440d;
+    text-align: center;
+    font-size: 23px;
+    font-family:'recursive';
+    font-weight: 700;
+}
+
+.central p{
+    color:white;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Recursive';
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.img-producto{
+    width: 220px;
+}
+
+.card{
+    width: 20%;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+
+.card-header{
+    padding: 30px 5px;
+    text-align: center;
+    color: white;
+}
+
+.card-body{
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card-body .btn{
+    display: block;
+    color: white;
+    text-align: center;
+    background-color:#f79f1c;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.tarjetas{
+    margin-top: 200px;
+    
+}
+
+.img-down{
+    width: 600px;
+}
+
+.info{
+    margin-top: 60px;
+    display: flex;
+    gap: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+
+.info img{
+    margin-left: 15px;
+}
+
+.info p{
+    color: #796f2e;
+    margin: 8px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    background-color: #f79f1c;
+    padding: 20px;
+}
+
+input{
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+.newsletter h4{
+    margin-bottom: 10px;
+}
+
+button{
+    margin-top: 30px;
+    padding: .7rem 2rem;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #cb8824;
+    color: white;
+}
+
+footer{
+    background-color:#3e2806;
+    color: white;
+    padding: 30px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.precio{
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1000px){
+    .card{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .info{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .central{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:620px){
+    .card{
+    width:80%;
+    } 
+}
+
+@media (max-width:620px){
+    .central{
+        height: 200px;
+    }
+    .central h1{
+        font-size: 30px;
+    }
+    .central p{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:620px){
+    nav{
+        display: block;
+    }
+}
+
+@media(max-width:620px){
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .info img{
+        padding-right: 10px;
+    }
+    button{
+        margin-top: 30px;
+    }
+}
+
