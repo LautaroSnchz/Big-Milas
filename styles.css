@@ -1,0 +1,310 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden; 
+}
+
+.contenedor {
+    width:90%;
+    margin:0 auto;
+}
+
+header{
+    background-color: darkorange;
+    padding: 20px;
+}
+
+h3{
+    text-align: center;
+}
+nav{
+    display:flex;
+}
+
+header .contenedor{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.7s;
+}
+
+header nav a:hover{
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.central {
+    background:url(recursos/mila-con-fritas.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size:cover;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+h1{
+    color: #62440d;
+    text-align: center;
+    font-size: 23px;
+    font-family:'recursive';
+    font-weight: 700;
+}
+
+.central p{
+    color:white;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Recursive';
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.img-producto{
+    width: 220px;
+}
+
+/* Contenedor de la tarjeta */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+/* Contenedor de la imagen */
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; 
+    object-fit: cover; 
+    margin-bottom: 15px;
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; 
+    text-align: center;
+}
+
+/* Botón de la tarjeta */
+.card-body .btn {
+    display: inline-block;
+    color: white;
+    background-color: #f79f1c;
+    padding: 10px 20px;
+    margin-top: auto;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.card-body .btn:hover {
+    background-color: #cb8824; 
+    transform: scale(1.05); 
+}
+
+/* Precio */
+.card-body .precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.tarjetas{
+    margin-top: 200px;
+    
+}
+
+.img-down{
+    width: 600px;
+}
+
+.info{
+    margin-top: 60px;
+    display: flex;
+    gap: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+
+.info img{
+    margin-left: 15px;
+}
+
+.info p{
+    color: #796f2e;
+    margin: 8px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    background-color: #f79f1c;
+    padding: 20px;
+}
+
+input{
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+.newsletter h4{
+    margin-bottom: 10px;
+}
+
+button{
+    margin-top: 30px;
+    padding: .7rem 2rem;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #cb8824;
+    color: white;
+}
+
+footer{
+    background-color:#3e2806;
+    color: white;
+    padding: 30px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.precio{
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1000px){
+    .card{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .info{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .central{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:620px){
+    .card{
+    width:80%;
+    } 
+}
+
+@media (max-width:620px){
+    .central{
+        height: 200px;
+    }
+    .central h1{
+        font-size: 30px;
+    }
+    .central p{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:620px){
+    nav{
+        display: block;
+    }
+}
+
+@media(max-width:620px){
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .info img{
+        padding-right: 10px;
+    }
+    button{
+        margin-top: 30px;
+    }
+}
+
+.toast {
+    display: none; 
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #25D366; /* Verde de WhatsApp */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+.whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; 
+    vertical-align: middle; 
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
