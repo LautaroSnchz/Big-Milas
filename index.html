@@ -1,127 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Milas | Las Mejores Milanesas</title>
+    <meta name="description" content="Las mejores milanesas del mercado, pedí la tuya. Calidad premium y sabor inigualable.">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Recursive:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-    <title>LS Milanesas</title>
-    <script src="index.js" ></script>
 </head>
 <body>
-    <header>
-        <div class="contenedor">
-            <h2 class="logo" >Big Milas</h2>
+    <header id="header">
+        <div class="contenedor header-content">
+            <h2 class="logo">BIG <span>MILAS</span></h2>
             <nav>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Sucursales</a></li>
-                <li><a href="">Contacto</a></li>
+                <a href="#inicio">Inicio</a>
+                <a href="#menu">Menú</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
             </nav>
+            <button class="menu-btn-mobile" id="menu-btn">☰</button>
         </div>
     </header>
-    <section class="central">
-        <div class="contenid-central">
-            <h1>Best Milanesas</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis necessitatibus, suscipit quis eius distinctio </p>
-            <p>Pedi la Tuya</p>
-        </div>
-    </section>
-    <section class="tarjetas">
-        <div class="row">
-            <div class="card">
-                <div class="card-header">
-                    <img class="img-producto" src="recursos/mila-napo-carne.jpg" alt="hamburguesa pollo">
-                </div>
-                <div class="card-body">
-                    <p>
-                        Milanesa a la napolitana de carne con guarnicion de fritas
-                    </p>
-                    <a href="" class="btn">Pedir ahora</a>
-                    <p class="precio">$450</p>
-                </div>
-            </div>
 
-                <div class="card">
-                <div class="card-header">
-                    <img class="img-producto" src="recursos/mila-con-pure.jpg" alt="hamburguesa pollo">
-                    </div>
-                <div class="card-body">
-                    <p>
-                        Milanesa de pollo simple con guarnicion de pure
-                    </p>
-                    <a href="" class="btn">Pedir ahora</a>
-                    <p class="precio">$325</p>
-                </div>
-            </div>
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-up">
+            <span class="badge">Sabor Premium</span>
+            <h1>LAS MEJORES MILANESAS</h1>
+            <p>Crujientes por fuera, tiernas por dentro. Preparadas con ingredientes seleccionados de primera calidad. Una experiencia que tu paladar no olvidará.</p>
+            <a href="#menu" class="btn-primary">Pedí la Tuya</a>
+        </div>
+    </section>
 
-                <div class="card">
-                <div class="card-header">
-                    <img class="img-producto" src="recursos/mila-carne-huevo.jpg" alt="hamburguesa pollo">
-                    </div>
-                <div class="card-body">
-                    <p>
-                        Milanesa de carne con fritas y huevo
-                    </p>
-                    <a href="" class="btn">Pedir ahora</a>
-                    <p class="precio">$370</p>
-                </div>
+    <section id="menu" class="seccion menu">
+        <div class="contenedor">
+            <div class="seccion-header fade-in-up">
+                <h2>Nuestro Menú</h2>
+                <p>Descubrí nuestra variedad de milanesas, pensadas para todos los gustos.</p>
             </div>
+            
+            <div class="row">
+                <div class="card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="card-header">
+                        <img class="img-producto" src="recursos/mila-napo-carne.jpg" alt="Milanesa napolitana de carne">
+                    </div>
+                    <div class="card-body">
+                        <h3>Napo de Carne</h3>
+                        <p>Milanesa a la napolitana de carne con una abundante guarnición de papas fritas crujientes.</p>
+                        <div class="card-footer">
+                            <p class="precio">$4.500</p>
+                            <a href="#" class="btn-secondary">Pedir ahora</a>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="card">
-                <div class="card-header">
-                    <img class="img-producto" src="recursos/mila-napo-pollo.jpeg" alt="hamburguesa pollo">
+                <div class="card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="card-header">
+                        <img class="img-producto" src="recursos/mila-con-pure.jpg" alt="Milanesa con pure">
                     </div>
-                <div class="card-body">
-                    <p>
-                        Milanesa de pollo a la napolitana con fritas
-                    </p>
-                    <a href="" class="btn">Pedir ahora</a>
-                    <p class="precio">$500</p>
+                    <div class="card-body">
+                        <h3>Clásica con Puré</h3>
+                        <p>Milanesa de pollo simple, dorada a la perfección, acompañada de nuestro suave puré de papas casero.</p>
+                        <div class="card-footer">
+                            <p class="precio">$3.250</p>
+                            <a href="#" class="btn-secondary">Pedir ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="card-header">
+                        <img class="img-producto" src="recursos/mila-carne-huevo.jpg" alt="Milanesa con huevo">
+                    </div>
+                    <div class="card-body">
+                        <h3>A Caballo</h3>
+                        <p>Clásica milanesa de carne coronada con dos huevos fritos jugosos y papas fritas. Un clásico argentino.</p>
+                        <div class="card-footer">
+                            <p class="precio">$3.700</p>
+                            <a href="#" class="btn-secondary">Pedir ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="card-header">
+                        <img class="img-producto" src="recursos/mila-napo-pollo.jpeg" alt="Milanesa napolitana pollo">
+                    </div>
+                    <div class="card-body">
+                        <h3>Napo de Pollo</h3>
+                        <p>Milanesa de pollo cubierta de salsa, jamón y queso gratinado, servida con papas fritas.</p>
+                        <div class="card-footer">
+                            <p class="precio">$5.000</p>
+                            <a href="#" class="btn-secondary">Pedir ahora</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="seccion info">
+        <div class="contenedor info-grid">
+            <div class="info-img-wrapper fade-in-up">
+                <img class="img-down" src="recursos/comedor-nuevo.png" alt="Nuestro Comedor">
+                <div class="img-decoration"></div>
             </div>
+            <div class="info-text fade-in-up" style="animation-delay: 0.2s;">
+                <h2>Tradición y Calidad</h2>
+                <h3>Las mejores milanesas del mercado</h3>
+                <p>En Big Milas, cada milanesa cuenta una historia. Seleccionamos cuidadosamente los mejores cortes de carne y pechugas de pollo, empanados con nuestra receta secreta y pan rallado artesanal para garantizar ese crunch perfecto.</p>
+                <p>Nuestro ambiente cálido y familiar te invita a disfrutar de un clásico argentino con el nivel de calidad que te merecés. Vení a conocernos a nuestro local en Rafaela y dejate sorprender por el verdadero sabor.</p>
+                
+                <div class="stats">
+                    <div class="stat">
+                        <h4>+10k</h4>
+                        <span>Clientes Felices</span>
+                    </div>
+                    <div class="stat">
+                        <h4>100%</h4>
+                        <span>Casero</span>
+                    </div>
+                </div>
             </div>
-    </section>
-    <section class="info">
-        <img class="img-down" src="recursos/comedor-mila.jpg" >
-        <div>
-            <h3>Mejores Milanesas del mercado</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veritatis dolor rerum fugiat asperiores, saepe quos aspernatur illo praesentium? Doloremque magni corrupti quaerat! Fuga debitis iste voluptatum. Quo, velit eaque?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, molestiae magni repudiandae esse, eaque modi dolor, eius corrupti autem perferendis totam minus nihil impedit pariatur cumque repellendus distinctio ipsam optio?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat corporis culpa dolorem eos quidem ullam ab error nulla nam quasi hic facilis molestias facere sit, aspernatur temporibus accusamus dolore ipsam?</p>
         </div>
-        <div id="toast" class="toast">
-            <img src="recursos/wp1.png" alt="WhatsApp" class="whatsapp-icon">
-            <span>Hace tu pedido !</span>
-        </div>
-        
-        
-        
     </section>
-    <section class="newsletter">
-        <div class="">
-            <label for="correo">
-                <h4>Suscribete para recibir promociones unicas!</h4>
-                <input type="text" id="correo" placeholder="Ingresa tu correo">
-            </label>
+
+    <section id="contacto" class="newsletter fade-in-up">
+        <div class="contenedor newsletter-content">
+            <div class="newsletter-text">
+                <h2>¡No te pierdas nada!</h2>
+                <p>Suscribite a nuestro newsletter para recibir promociones únicas y enterarte de nuestros nuevos platos antes que nadie.</p>
+            </div>
+            <form class="newsletter-form" onsubmit="event.preventDefault()">
+                <input type="email" id="correo" placeholder="Ingresá tu correo electrónico" required>
+                <button type="submit" class="btn-primary">Suscribirme</button>
+            </form>
         </div>
-        <button>Enviar</button>
     </section>
+
     <footer>
-        <ul>
-            <li>Milanesas</li>
-            <li>Calidad</li>
-            <li>Nosotros</li>
-            <li>Cocineros</li>
-        </ul>
-        <p>Todos los derechos reservados.</p>
+        <div class="contenedor footer-grid">
+            <div class="footer-brand">
+                <h2 class="logo">BIG <span>MILAS</span></h2>
+                <p>Elaborando felicidad empanizada desde 2010. Tu milanesa favorita te espera.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#menu">Nuestro Menú</a></li>
+                    <li><a href="#nosotros">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Big Milas. Todos los derechos reservados. | By Lautaro Sánchez</p>
+        </div>
     </footer>
+
+    <!-- WhatsApp Toast -->
+    <a href="https://wa.me/123456789" target="_blank" id="toast" class="toast">
+        <img src="recursos/wp1.png" alt="WhatsApp" class="whatsapp-icon">
+        <div class="toast-text">
+            <strong>¿Tenés hambre?</strong>
+            <span>¡Hacé tu pedido acá!</span>
+        </div>
+    </a>
+
+    <script src="index.js"></script>
 </body>
 </html>
